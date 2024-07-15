@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Explore sem limites</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <div class="page">
+      <header>
+        <img class="astronaut" src="./assets/astronaut.png" alt="" />
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
+        <button onclick="scrollDown()" id="button-scroll">
+          <img class="arrow-button" src="./assets/Arrow.svg" alt="" />
+        </button>
+      </header>
+
+      <main>
+        <div class="planet">
+          <div class="container">
+            <img src="./assets/planet01.svg" alt="" />
+            <h2>Não pare nunca</h2>
+            <p>
+              Se você deseja ter sucesso nos estudos, é fundamental que você
+              adote uma mentalidade de "não pare nunca". Estudar de forma
+              consistente e contínua é a chave para o progresso e a conquista de
+              seus objetivos.
+            </p>
+          </div>
+        </div>
+
+        <div class="planet">
+          <div class="container">
+            <img src="./assets/planet02.svg" alt="" />
+            <h2>Só volta</h2>
+            <p>
+              Se você parou ou perdeu o ritmo em alguma atividade ou projeto,
+              saiba que nunca é tarde para recomeçar. Às vezes, as
+              circunstâncias podem mudar, ou podemos nos sentir desmotivados ou
+              sobrecarregados.
+            </p>
+          </div>
+        </div>
+
+        <div class="planet">
+          <div class="container">
+            <img src="./assets/planet03.svg" alt="" />
+            <h2>Siga seu ritmo</h2>
+            <p>
+              Avançar pouco a pouco mantém progresso constante em objetivos,
+              evitando parar ou desistir. Mesmo pequenos passos nos aproximam do
+              destino e motivam a continuidade. Não subestime o poder de cada
+              ação rumo ao objetivo final.
+            </p>
+          </div>
+        </div>
+      </main>
+      <form>
+        <h3>Entre em contato</h3>
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Seu nome" />
+        </div>
+
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" id="email" placeholder="Email" />
+        </div>
+
+        <textarea name="message" id="message">
+Digite sua mensagem aqui...</textarea
+        >
+
+        <button>Enviar Mensagem</button>
+      </form>
+
+      <footer>© 2023 - Rocketseat Explorer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #f9f4fb;
+  --main-color: #312d64;
+  --font-color: #b52184;
+  --background-gradient: linear-gradient(
+    to right,
+    hsl(242, 50%, 38%),
+    hsl(244, 38%, 28%)
+  );
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.page {
+  width: 43rem;
+  margin: 0 auto;
+  max-height: 256.4rem;
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  color: var(--font-color);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 p {
+  display: block;
+  gap: 1.3rem;
+}
+
+header h1 {
+  font-weight: 900;
+  color: var(--font-color);
+  font-size: 3.2rem;
+  margin-top: 1.7rem;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 3.5rem;
+}
+
+header img {
+  width: 36.4rem;
+  height: 37rem;
+}
+
+.arrow-button {
+  width: 5.8rem;
+  height: 10.5rem;
+  margin-bottom: 9.3rem;
+}
+
+main {
+  background: var(--background-gradient);
+  height: 124.2rem;
+  padding: 5.2rem 3.9rem;
+}
+
+.planet {
+  margin-bottom: 5rem;
+}
+
+.container {
+  background-color: white;
+  padding: 2.6rem 5.9rem 2.6rem 2.6rem;
+  height: 35.2rem;
+  border-radius: 2rem;
+}
+
+.container p {
+  margin-top: 0.7rem;
+  margin-bottom: 2.6rem;
+}
+
+.planet h2 {
+  font-size: 3rem;
+  margin-top: 1.8rem;
+}
+
+form {
+  height: 56.5rem;
+  padding: 7.8rem 3.9rem;
+}
+
+form h3 {
+  font-size: 3.2rem;
+  margin-bottom: 4.3rem;
+}
+
+form label,
+input {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--main-color);
+  border: none;
+  background: var(--bg-color);
+}
+
+.name input,
+.email input {
+  border: 0.2rem solid var(--main-color);
+  border-radius: 1.6rem;
+  height: 4.4rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  padding-left: 5rem;
+}
+
+::placeholder {
+  color: var(--main-color);
+  padding: 1.6rem auto;
+}
+
+.name input {
+  background-image: url(./assets/person.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 14px, 12px;
+}
+
+.email input {
+  background-image: url(./assets/email.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 14px, 12px;
+}
+
+form textarea {
+  border: 0.2rem solid var(--main-color);
+  border-radius: 1.6rem;
+  width: 100%;
+  height: 12.6rem;
+  background-color: var(--bg-color);
+  padding: 1.2rem 1.6rem;
+  color: var(--main-color);
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+form button {
+  border: none;
+  background: var(--background-gradient);
+  color: white;
+  height: 4.5rem;
+  width: 15.1;
+  border-radius: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  font-size: 1.4rem;
+  font-family: "Mulish", sans-serif;
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+footer {
+  height: 7.8rem;
+  background: var(--background-gradient);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3.2rem;
+}
+
+header button {
+  cursor: pointer;
+  border: none;
+  background: var(--bg-color);
+}
+
+.arrow-button:hover {
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
+form button:hover {
+  background: var(--font-color);
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+@media (min-width: 750px) {
+  body {
+    background: var(--bg-color);
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+
+  header,
+  main,
+  form,
+  footer {
+    min-width: 144rem;
+  }
+
+  header h1,
+  p,
+  button {
+    display: flex;
+    align-items: center;
+    padding-left: 10.9rem;
+  }
+
+  header .astronaut {
+    width: 71.9rem;
+    height: 73.2rem;
+    margin-left: 69.1rem;
+    margin-right: 2.9rem;
+  }
+
+  header h1 {
+    font-size: 5.8rem;
+    margin-top: -40.2rem;
+  }
+
+  header p {
+    font-size: 3.5rem;
+  }
+
+  header .arrow-button {
+    margin: 17.7rem auto 13.6rem;
+  }
+
+  main {
+    display: flex;
+    height: 57.6rem;
+    gap: 6rem;
+    justify-content: center;
+  }
+
+  .container {
+    height: 44.8rem;
+    width: 36.6rem;
+    padding: 3.2rem;
+  }
+
+  .container p {
+    padding-left: 0;
+    font-size: 1.9rem;
+  }
+
+  form {
+    background-image: url(./assets/Star-BG.png);
+    background-repeat: no-repeat;
+    background-size: 64.4rem;
+    background-position-x: right;
+  }
+
+  form h3 {
+    font-size: 4.2rem;
+  }
+
+  .name,
+  .email,
+  form textarea {
+    width: 59.2rem;
+  }
+}
